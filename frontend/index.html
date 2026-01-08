@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>GIS Mobile App</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Leaflet CSS -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  />
+</head>
+<body>
+  <div class="app-container">
+    <h1>GIS Mobile Application</h1>
+
+    <!-- Buttons -->
+    <button id="getLocationBtn">Get My Location</button>
+    <button id="weatherBtn" disabled>Get Weather Data</button>
+    <button id="hotelsBtn">Show Nearby Hotels</button>
+
+    <!-- Display Blocks -->
+    <div id="locationBlock" class="display-block"></div>
+    <div id="mapBlock" class="display-block">
+      <div id="map" style="height: 300px;"></div>
+    </div>
+    <div id="weatherBlock" class="display-block"></div>
+    <!-- This will hold the Leaflet map for hotels -->
+    <div id="hotelMap" style="height: 500px;"></div>
+    <div id="hotelsBlock" class="display-block"></div>
+  </div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

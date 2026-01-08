@@ -1,0 +1,19 @@
+{
+  "name": "gis-mobile-app",
+  "version": "1.0.0",
+  "description": "GIS Mobile Application with Weather and Nearby Hotels Services",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Odhiambo Jacob",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.13.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^4.19.2",
+    "node-fetch": "^3.3.2"
+  }
+}
