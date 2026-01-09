@@ -95,7 +95,7 @@ document.getElementById("weatherBtn").addEventListener("click", async () => {
 
   try {
     const res = await fetch(
-      `https://solid-eureka-756pp9j9xvj3p4wp-3000.app.github.dev/api/weather?lat=${currentCoords.latitude}&lon=${currentCoords.longitude}`
+      `https://geolocate-qy66.onrender.com/api/weather?lat=${currentCoords.latitude}&lon=${currentCoords.longitude}`
     )
 
     if (!res.ok) throw new Error("Weather backend error")
@@ -169,7 +169,7 @@ hotelsBtn.addEventListener("click", async () => {
 
   try {
     const res = await fetch(
-      `https://solid-eureka-756pp9j9xvj3p4wp-3000.app.github.dev/api/hotels?lat=${userLat}&lon=${userLon}`
+      `https://geolocate-qy66.onrender.com/api/hotels?lat=${userLat}&lon=${userLon}`
     )
     const hotels = await res.json()
 
